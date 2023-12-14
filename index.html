@@ -11,14 +11,18 @@
     <div class="web-app">
         <header>    
             <nav class="d-flex p-2 align-items-center justify-content-between">
-                <a class="col-1 d-flex d-lg-none" href="#">
+                <a class="col-1 d-flex d-lg-none justify-content-center" href="#">
                     <figure class="figure m-0 w-50">
                         <img class="img-fluid d-block" src="./assets/img/mobile-logo.svg" alt="logo">
                     </figure>
                 </a>
-                <figure class="figure m-0 d-none d-lg-block">
-                    <img class="img-fluid d-block" src="./assets/img/logo.svg" alt="logo">
-                </figure>
+
+                <a class="text-decoration-none" href="#">
+                    <figure class="figure m-0 d-none d-lg-block">
+                        <img class="img-fluid d-block" src="./assets/img/logo.svg" alt="logo">
+                    </figure>
+                </a>
+                
                 <form class="d-flex col-9 flex-grow-1 px-3" role="search">
                     <figure class="figure m-0">
                         <img class="img-fluid d-block" src="./assets/img/magnifying-glass-solid.svg" alt="logo">
@@ -57,14 +61,53 @@
 
 
 
-        <main>
-            <div class="web-app-body">
+        <main class="container-fluid">
+            <div class="web-app-body row">
 
 
 
 
-                <aside class="">
-                    <div>
+                <aside class="col-1 col-lg-2 d-flex py-3">
+                    <div class="w-100 d-flex flex-column justi justify-content-between m-0">
+                        <div class="d-block">
+                            <a class="text-decoration-none" href="#">
+                                <div class="d-flex text-light justify-content-center pb-3 gap-4 align-items-center">
+                                    <figure class="figure m-0">
+                                        <img class="img-fluid d-block" src="./assets/img/house-solid.svg" alt="logo">
+                                    </figure>
+                                    <span class="d-none d-lg-block">Home</span>
+                                </div>
+                            </a>
+
+                            <a class="text-decoration-none" href="#">
+                                <div class="d-flex text-light justify-content-center gap-4 align-items-center">
+                                    <figure class="figure m-0">
+                                        <img class="img-fluid d-block" src="./assets/img/chart-simple-solid.svg" alt="logo">
+                                    </figure>
+                                    <span class="d-none d-lg-block">Stats</span>
+                                </div>
+                            </a>
+
+                            <a class="text-decoration-none" href="#">
+                                <div class="d-flex text-light justify-content-center pt-3 gap-4 align-items-center">
+                                    <figure class="figure m-0">
+                                        <img class="img-fluid d-block" src="./assets/img/signal-solid.svg" alt="logo">
+                                    </figure>
+                                    <span class="d-none d-lg-block">Signals</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <a class="text-decoration-none" href="#">
+                            <div class="d-block">
+                                <div class="d-flex text-light justify-content-center pt-3 gap-4 align-items-center">
+                                    <figure class="figure m-0">
+                                        <img class="img-fluid d-block" src="./assets/img/gear-solid.svg" alt="logo">
+                                    </figure>
+                                    <span class="d-none d-lg-block">Admin</span>
+                                </div>
+                            </div>
+                        </a>
 
                     </div>
                 </aside>
@@ -74,7 +117,27 @@
 
 
 
-                <div class="web-app-body-container">
+                <div class="web-app-body-container col-11 col-lg-10 p-0">
+                    <div class="web-app-body-header bg-primary d-flex flex-column text-light">
+                        <div>
+                            <span>Nuovo Studente</span>
+                            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                <figure class="figure m-0 border rounded p-2">
+                                    <img class="img-fluid d-block" src="./assets/img/plus-solid.svg" alt="logo">
+                                </figure>
+                            </button>
+
+                            <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                ...
+                            </div>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
             </div>

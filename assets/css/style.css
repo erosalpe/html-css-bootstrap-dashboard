@@ -24,7 +24,18 @@ header{
 }
 
 aside{
-    width: 10rem;
-    background-color: aqua;
     height: 92vh;
+    background-image: url(../img/sidebar-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #051e34;
+}
+
+.web-app-body-container{
+    background-color: red;
+    height: 92vh;
+}
+
+.web-app-body-header{
+    width: 100%;
 }
