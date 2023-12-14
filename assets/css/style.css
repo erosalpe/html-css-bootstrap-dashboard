@@ -18,3 +18,13 @@ form > figure{
     top: 50%;
     left: 40px;
 }
+
+header{
+    height: 8vh;
+}
+
+aside{
+    width: 10rem;
+    background-color: aqua;
+    height: 92vh;
+}
