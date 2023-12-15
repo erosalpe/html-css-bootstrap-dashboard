@@ -49,11 +49,18 @@
                         </figure>
                     </a>
 
-                    <a href="#">
-                        <figure class="figure m-0">
-                            <img class="img-fluid d-block" src="./assets/img/bell-solid.svg" alt="logo">
-                        </figure>
-                    </a>
+                    <div>
+                        <a href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                            <figure class="figure m-0">
+                                <img class="img-fluid d-block" src="./assets/img/bell-solid.svg" alt="logo">
+                            </figure>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><button class="dropdown-item" type="button">Action</button></li>
+                            <li><button class="dropdown-item" type="button">Another action</button></li>
+                            <li><button class="dropdown-item" type="button">Something else here</button></li>
+                          </ul>
+                    </div>
 
                 </div>
             </nav>
@@ -61,17 +68,13 @@
 
 
 
-        <main class="container-fluid">
-            <div class="web-app-body row">
-
-
-
-
-                <aside class="col-1 col-lg-2 d-flex py-3">
-                    <div class="w-100 d-flex flex-column justi justify-content-between m-0">
+        <main>
+            <div class="web-app-body d-flex">
+                <aside class="d-flex py-3 px-3">
+                    <div class="d-flex flex-column justi justify-content-between m-0">
                         <div class="d-block">
                             <a class="text-decoration-none" href="#">
-                                <div class="d-flex text-light justify-content-center pb-3 gap-4 align-items-center">
+                                <div class="d-flex text-light justify-content-center pb-3 gap-3 align-items-center">
                                     <figure class="figure m-0">
                                         <img class="img-fluid d-block" src="./assets/img/house-solid.svg" alt="logo">
                                     </figure>
@@ -89,7 +92,7 @@
                             </a>
 
                             <a class="text-decoration-none" href="#">
-                                <div class="d-flex text-light justify-content-center pt-3 gap-4 align-items-center">
+                                <div class="d-flex text-light justify-content-center pt-3 gap-3 align-items-center">
                                     <figure class="figure m-0">
                                         <img class="img-fluid d-block" src="./assets/img/signal-solid.svg" alt="logo">
                                     </figure>
@@ -100,7 +103,7 @@
 
                         <a class="text-decoration-none" href="#">
                             <div class="d-block">
-                                <div class="d-flex text-light justify-content-center pt-3 gap-4 align-items-center">
+                                <div class="d-flex text-light justify-content-center pt-3 gap-3 align-items-center">
                                     <figure class="figure m-0">
                                         <img class="img-fluid d-block" src="./assets/img/gear-solid.svg" alt="logo">
                                     </figure>
@@ -117,25 +120,97 @@
 
 
 
-                <div class="web-app-body-container col-11 col-lg-10 p-0">
-                    <div class="web-app-body-header bg-primary d-flex flex-column text-light">
-                        <div>
+                <div class="web-app-body-container p-0 w-100">
+                    <div class="web-app-body-header bg-primary d-flex flex-column text-light p-2 flex-md-row justify-content-md-between align-items-md-center">
+                        <div class="d-flex align-items-center gap-2 pb-3 order-md-2 larghezza-lg">
                             <span>Nuovo Studente</span>
-                            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <button class="btn btn-primary pt-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                                 <figure class="figure m-0 border rounded p-2">
                                     <img class="img-fluid d-block" src="./assets/img/plus-solid.svg" alt="logo">
                                 </figure>
                             </button>
 
-                            <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                            <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            <div class="offcanvas offcanvas-end new-user" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    ...
+                                </div>
                             </div>
-                            <div class="offcanvas-body">
-                                ...
+                        </div>
+
+                        <div class="pb-3 pb-md-0 m-0 order-md-0">
+
+                            <div class="d-flex align-content-center gap-2">
+                                <h2>Boolean</h2>
+                                <span class="badge rounded-pill rslpgn-bg-primary-subtle d-flex align-self-center">
+                                    Piano blaze
+                                </span>
                             </div>
+    
+                            <div>
+                                <nav>
+                                    <ul class="list-unstyled d-flex gap-1">
+                                        <li>
+                                            <a href="#">
+                                                <span class="badge rounded-pill rslpgn-bg-primary-subtle">
+                                                    3 app
+                                                </span>
+                                            </a>
+                                        </li>
+    
+                                        <li class="d-lg-none">
+                                            <figure class="figure m-0">
+                                                <img class="img-fluid d-block" src="./assets/img/angles-right-solid.svg" alt="arrow-right">
+                                            </figure>
+                                            <a href="#">
+                                                <span class="badge rounded-pill rslpgn-bg-primary-subtle fs-7">
+                                                    +
+                                                </span>
+                                            </a>
+                                        </li>
+    
+                                        <li class="d-none d-lg-block">
+                                            <figure class="figure m-0">
+                                                <img class="img-fluid d-block" src="./assets/img/angles-right-solid.svg" alt="arrow-right">
+                                            </figure>
+                                            <a href="#">
+                                                <span class="badge rounded-pill rslpgn-bg-primary-subtle">
+                                                    Boolean mobile app
+                                                </span>
+                                            </a>
+                                        </li>
+    
+                                        <li class="d-none d-lg-block">
+                                            <figure class="figure m-0">
+                                                <img class="img-fluid d-block" src="./assets/img/angles-right-solid.svg" alt="arrow-right">
+                                            </figure>
+                                            <a href="#">
+                                                <span class="badge rounded-pill rslpgn-bg-primary-subtle">
+                                                    Boolean web app
+                                                </span>
+                                            </a>
+                                        </li>
+    
+                                        <li class="d-none d-lg-block">
+                                            <figure class="figure m-0">
+                                                <img class="img-fluid d-block" src="./assets/img/angles-right-solid.svg" alt="arrow-right">
+                                            </figure>
+                                            <a href="#">
+                                                <span class="badge rounded-pill rslpgn-bg-primary-subtle">
+                                                    Boolean blog app
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
                             </div>
+                        </div>
+                        <div class="larghezza-lg">
+                            <h6>Studenti online negli ultimi 30 minuti</h6>
+                            <span class="fs-3">125</span>
                         </div>
                     </div>
 

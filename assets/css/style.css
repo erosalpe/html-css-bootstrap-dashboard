@@ -29,13 +29,48 @@ aside{
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #051e34;
+    width: fit-content;
 }
 
 .web-app-body-container{
-    background-color: red;
     height: 92vh;
 }
 
 .web-app-body-header{
     width: 100%;
 }
+
+.rslpgn-bg-primary-subtle{
+    background-color: #165bba;
+}
+
+.badge.rounded-pill.rslpgn-bg-primary-subtle{
+    height: fit-content;
+}
+
+.badge.rounded-pill.rslpgn-bg-primary-subtle.fs-7{
+    font-family: sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ @media screen and (max-width: 991px){
+    .offcanvas.offcanvas-end{
+        width: 100%;
+    }
+ }
+
+ @media screen and (min-width: 992px){
+    .larghezza-lg{
+        width: 20%;
+    }
+ }
