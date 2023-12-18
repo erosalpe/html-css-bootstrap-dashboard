@@ -56,9 +56,9 @@
                             </figure>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end">
-                            <li><button class="dropdown-item" type="button">Action</button></li>
-                            <li><button class="dropdown-item" type="button">Another action</button></li>
-                            <li><button class="dropdown-item" type="button">Something else here</button></li>
+                            <li><button class="dropdown-item" type="button">Profilo</button></li>
+                            <li><button class="dropdown-item" type="button">Fatturazione</button></li>
+                            <li><button class="dropdown-item" type="button">Logout</button></li>
                           </ul>
                     </div>
 
@@ -74,7 +74,7 @@
                     <div class="d-flex flex-column justi justify-content-between m-0">
                         <div class="d-block">
                             <a class="text-decoration-none" href="#">
-                                <div class="d-flex text-light justify-content-center pb-3 gap-3 align-items-center">
+                                <div class="d-flex text-light justify-content-center mb-3 gap-3 align-items-center white-hover py-1">
                                     <figure class="figure m-0">
                                         <img class="img-fluid d-block" src="./assets/img/house-solid.svg" alt="logo">
                                     </figure>
@@ -83,7 +83,7 @@
                             </a>
 
                             <a class="text-decoration-none" href="#">
-                                <div class="d-flex text-light justify-content-center gap-4 align-items-center">
+                                <div class="d-flex text-light justify-content-center mb-3 gap-4 align-items-center white-hover py-1">
                                     <figure class="figure m-0">
                                         <img class="img-fluid d-block" src="./assets/img/chart-simple-solid.svg" alt="logo">
                                     </figure>
@@ -92,7 +92,7 @@
                             </a>
 
                             <a class="text-decoration-none" href="#">
-                                <div class="d-flex text-light justify-content-center pt-3 gap-3 align-items-center">
+                                <div class="d-flex text-light justify-content-center gap-3 align-items-center white-hover py-1">
                                     <figure class="figure m-0">
                                         <img class="img-fluid d-block" src="./assets/img/signal-solid.svg" alt="logo">
                                     </figure>
@@ -124,7 +124,7 @@
                     <div class="web-app-body-header bg-primary d-flex flex-column text-light p-2 flex-md-row justify-content-md-between align-items-md-center">
                         <div class="d-flex align-items-center gap-2 pb-3 order-md-2 larghezza-lg">
                             <span>Nuovo Studente</span>
-                            <button class="btn btn-primary pt-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <button class="btn add btn-primary pt-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                                 <figure class="figure m-0 border rounded p-2">
                                     <img class="img-fluid d-block" src="./assets/img/plus-solid.svg" alt="logo">
                                 </figure>
@@ -132,39 +132,130 @@
 
                             <div class="offcanvas offcanvas-end new-user" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                                 <div class="offcanvas-header">
-                                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                                    <h5 class="offcanvas-title container-fluid" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                 </div>
                                 <div class="offcanvas-body">
-                                    <div class="d-flex gap-2">
-                                        <div class="d-flex flex-column gap-2">
-                                            <span>Nome</span>
-                                            <div class="input-group mb-3">
-                                                <input type="text" class="border rounded" aria-label="Nome" aria-describedby="basic-addon1">
+
+                                    <form>
+                                        <div class="d-flex gap-2 container-fluid">
+                                            <div class="row w-100">
+                                                <div class="d-flex flex-column gap-2 col-12 col-md-6">
+                                                    <span>Nome</span>
+                                                    <div class="input-group mb-3">
+                                                        <input type="text" class="form-control ps-1" aria-label="Nome" aria-describedby="basic-addon1" required>
+                                                    </div>
+                                                </div>
+        
+                                                <div class="d-flex flex-column gap-2 col-12 col-md-6">
+                                                    <span>Cognome</span>
+                                                    <div class="input-group mb-3">
+                                                        <input type="text" class="form-control ps-1" aria-label="Cognome" aria-describedby="basic-addon1" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    
+                                        <div class="d-flex gap-2 container-fluid">
+                                            <div class="row w-100">
+                                                <div class="d-flex flex-column gap-2 col-12 col-md-6">
+                                                    <span>E-Mail</span>
+                                                    <div class="input-group mb-3">
+                                                        <span class="input-group-text" id="basic-addon1">@</span>
+                                                        <input type="text" class="form-control ps-1" aria-label="email" aria-describedby="basic-addon1" required>
+                                                    </div>
+                                                </div>
+        
+                                                <div class="d-flex flex-column gap-2 col-12 col-md-6">
+                                                    <span>Password</span>
+                                                    <div class="input-group mb-3">
+                                                        <input type="password" class="form-control ps-1" aria-label="password" aria-describedby="basic-addon1" required>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
 
-                                        <div class="d-flex flex-column gap-2">
-                                            <span>Cognome</span>
-                                            <div class="input-group mb-3">
-                                                <input type="text" class="border rounded" aria-label="Cognome" aria-describedby="basic-addon1">
+                                        <div class="d-flex gap-2 container-fluid">
+                                            <div class="row w-100">
+                                                <div class="d-flex flex-column gap-2 col-12 col-md-6">
+                                                    <span>E-Mail</span>
+                                                    <div class="input-group mb-3">
+                                                        <span class="input-group-text" id="basic-addon1">@</span>
+                                                        <input type="text" class="form-control ps-1" aria-label="email" aria-describedby="basic-addon1" required>
+                                                    </div>
+                                                </div>
+        
+                                                <div class="d-flex flex-column gap-2 col-12 col-md-6">
+                                                    <span>Password</span>
+                                                    <div class="input-group mb-3">
+                                                        <input type="password" class="form-control ps-1" aria-label="password" aria-describedby="basic-addon1" required>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
 
-                                    <div class="d-flex gap-2">
-                                        <div class="input-group mb-3">
-                                            <span class="input-group-text" id="basic-addon1">@</span>
-                                            <input type="text" class="w-100" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-                                          </div>
-
-                                        <div class="d-flex flex-column gap-2">
-                                            <span>Cognome</span>
-                                            <div class="input-group mb-3">
-                                                <input type="text" class="border rounded" aria-label="Cognome" aria-describedby="basic-addon1">
+                                        <div class="d-flex gap-2 container-fluid">
+                                            <div class="row w-100">
+                                                <div class="d-flex flex-column gap-2 col-12 w-100">
+                                                    <span>Indirizzo</span>
+                                                    <div class="input-group mb-3">
+                                                        <input type="text" class="form-control ps-1" aria-label="indirizzo" aria-describedby="basic-addon1" required>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
+
+                                        <div class="d-flex gap-2 container-fluid">
+                                            <div class="row w-100">
+                                                <div class="d-flex flex-column gap-2 col-12 col-md-6">
+                                                    <span>Città</span>
+                                                    <div class="input-group mb-3">
+                                                        <input type="text" class="form-control ps-1" aria-label="città" aria-describedby="basic-addon1" required>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="d-flex flex-column gap-2 col-12 col-md-4">
+                                                    <span>Stato</span>
+                                                    <div class="input-group mb-3">
+                                                        <select class="form-control ps-1">
+                                                            <option value="HTML">Scegli...</option>
+                                                            <option value="HTML">Italia</option>
+                                                            <option value="CSS">Italia</option>
+                                                            <option value="JavaScript">Italia</option>
+                                                            <option value="React">Italia</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+        
+                                                <div class="d-flex flex-column gap-2 col-12 col-md-2">
+                                                    <span>CAP</span>
+                                                    <div class="input-group mb-3">
+                                                        <input type="text" class="form-control ps-1" aria-label="Cognome" aria-describedby="basic-addon1" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="container-fluid">
+                                            <div class="d-flex flex-column gap-2">
+                                                <span>Foto</span>
+                                                <div class="input-group">
+                                                    <input type="file" class="form-control ps-1 me-4" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload" required>
+                                                </div>
+                                            </div>
+
+                                            <div class="pt-4">
+                                                <input type="checkbox" id="checked" name="checked" value="checked" required>
+                                                <label for="checked"> Seleziona per proseguire</label><br>
+                                            </div>
+    
+                                            <div class="d-flex pt-4 gap-1">
+                                                <button type="submit" class="btn btn-primary">Salva</button>
+                                                <button type="reset" class="btn btn-warning">Svuota</button>
+                                            </div>
+                                        </div>
+                                    </form>
 
                                     
                                 </div>
@@ -268,7 +359,7 @@
                                     </li>
                                     
                                     <!--Riga 2-->
-                                    <li class="list-group-item">
+                                    <li class="list-group-item list-hover">
                                         <div class="row d-flex align-items-center">
 
                                             <!--Immagine inizio riga-->
@@ -311,7 +402,7 @@
                                     </li>
 
                                     <!--Riga 3-->
-                                    <li class="list-group-item">
+                                    <li class="list-group-item list-hover">
                                         <div class="row d-flex align-items-center">
 
                                             <!--Immagine inizio riga-->
@@ -354,7 +445,7 @@
                                     </li>
 
                                     <!--Riga 4-->
-                                    <li class="list-group-item">
+                                    <li class="list-group-item list-hover">
                                         <div class="row d-flex align-items-center">
                                             
                                             <!--Immagine inizio riga-->
@@ -397,7 +488,7 @@
                                     </li>
 
                                     <!--Riga 5-->
-                                    <li class="list-group-item">
+                                    <li class="list-group-item list-hover">
                                         <div class="row d-flex align-items-center">
 
                                             <!--Immagine inizio riga-->
@@ -440,7 +531,7 @@
                                     </li>
 
                                     <!--Riga 6-->
-                                    <li class="list-group-item">
+                                    <li class="list-group-item list-hover">
                                         <div class="row d-flex align-items-center">
 
                                             <!--Immagine inizio riga-->
@@ -483,7 +574,7 @@
                                     </li>
 
                                     <!--Riga 7-->
-                                    <li class="list-group-item">
+                                    <li class="list-group-item list-hover">
                                         <div class="row d-flex align-items-center">
 
                                             <!--Immagine inizio riga-->
@@ -526,7 +617,7 @@
                                     </li>
 
                                     <!--Riga 8-->
-                                    <li class="list-group-item">
+                                    <li class="list-group-item list-hover">
                                         <div class="row d-flex align-items-center">
 
                                             <!--Immagine inizio riga-->
@@ -569,7 +660,7 @@
                                     </li>
 
                                     <!--Riga 9-->
-                                    <li class="list-group-item">
+                                    <li class="list-group-item list-hover">
                                         <div class="row d-flex align-items-center">
 
                                             <!--Immagine inizio riga-->
@@ -618,7 +709,7 @@
                                 <div class="card-header fs-5">
                                     F.A.Q.
                                 </div>
-                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion accordion-flush px-3" id="accordionFlushExample">
                                     <div class="accordion-item">
                                       <h2 class="accordion-header">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
